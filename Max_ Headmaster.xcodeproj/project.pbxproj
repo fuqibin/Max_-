@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8F7394AA4C61C3FD62BC421 /* libPods-Max_ Headmaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 571CFBBB8679E489A996728D /* libPods-Max_ Headmaster.a */; };
 		DEE7867C1FD4F3DD00E6D318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE7867B1FD4F3DD00E6D318 /* AppDelegate.m */; };
 		DEE7867F1FD4F3DD00E6D318 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE7867E1FD4F3DD00E6D318 /* ViewController.m */; };
 		DEE786821FD4F3DD00E6D318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE786801FD4F3DD00E6D318 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		571CFBBB8679E489A996728D /* libPods-Max_ Headmaster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Max_ Headmaster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76FB201B69AD0AD564A9A9B3 /* Pods-Max_ Headmaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Max_ Headmaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Max_ Headmaster/Pods-Max_ Headmaster.release.xcconfig"; sourceTree = "<group>"; };
+		9E47AF4102CF49288A5AED51 /* Pods-Max_ Headmaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Max_ Headmaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Max_ Headmaster/Pods-Max_ Headmaster.debug.xcconfig"; sourceTree = "<group>"; };
 		DEE786771FD4F3DD00E6D318 /* Max_ Headmaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Max_ Headmaster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE7867A1FD4F3DD00E6D318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DEE7867B1FD4F3DD00E6D318 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8F7394AA4C61C3FD62BC421 /* libPods-Max_ Headmaster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5BE0F9E81185906D5559E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E47AF4102CF49288A5AED51 /* Pods-Max_ Headmaster.debug.xcconfig */,
+				76FB201B69AD0AD564A9A9B3 /* Pods-Max_ Headmaster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4555456C945CC03BFBB7AB5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				571CFBBB8679E489A996728D /* libPods-Max_ Headmaster.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DEE7866E1FD4F3DD00E6D318 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				DEE786921FD4F3DD00E6D318 /* Max_ HeadmasterTests */,
 				DEE7869D1FD4F3DD00E6D318 /* Max_ HeadmasterUITests */,
 				DEE786781FD4F3DD00E6D318 /* Products */,
+				2B5BE0F9E81185906D5559E5 /* Pods */,
+				4555456C945CC03BFBB7AB5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEE786A31FD4F3DD00E6D318 /* Build configuration list for PBXNativeTarget "Max_ Headmaster" */;
 			buildPhases = (
+				4FA1BB116BF963098DD80EEA /* [CP] Check Pods Manifest.lock */,
 				DEE786731FD4F3DD00E6D318 /* Sources */,
 				DEE786741FD4F3DD00E6D318 /* Frameworks */,
 				DEE786751FD4F3DD00E6D318 /* Resources */,
+				3C2DB6F026298FF21292B424 /* [CP] Embed Pods Frameworks */,
+				5AB16908DAB49E56C753F964 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C2DB6F026298FF21292B424 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Max_ Headmaster/Pods-Max_ Headmaster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FA1BB116BF963098DD80EEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Max_ Headmaster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AB16908DAB49E56C753F964 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Max_ Headmaster/Pods-Max_ Headmaster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DEE786731FD4F3DD00E6D318 /* Sources */ = {
@@ -428,6 +506,7 @@
 		};
 		DEE786A41FD4F3DD00E6D318 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E47AF4102CF49288A5AED51 /* Pods-Max_ Headmaster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +521,7 @@
 		};
 		DEE786A51FD4F3DD00E6D318 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76FB201B69AD0AD564A9A9B3 /* Pods-Max_ Headmaster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
